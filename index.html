@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Roaring Pan Restaurant</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+    color:#333;
+}
+
+/* HEADER */
+
+header{
+    background:#8B0000;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+header h1{
+    font-size:45px;
+}
+
+header p{
+    font-size:18px;
+    margin-top:10px;
+}
+
+/* NAVIGATION */
+
+nav{
+    background:#111;
+    padding:15px;
+    text-align:center;
+    position:sticky;
+    top:0;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 20px;
+    font-size:18px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:orange;
+}
+
+/* HERO SECTION */
+
+.hero{
+    background:url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4') center/cover;
+    height:500px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero h2{
+    background:rgba(0,0,0,0.6);
+    padding:25px;
+    font-size:50px;
+    border-radius:10px;
+}
+
+/* GENERAL SECTIONS */
+
+section{
+    padding:60px;
+}
+
+section h2{
+    text-align:center;
+    color:#8B0000;
+    margin-bottom:30px;
+    font-size:35px;
+}
+
+/* ABOUT */
+
+.about p{
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+/* FOOD GALLERY */
+
+.food-gallery{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+}
+
+.food-card{
+    background:white;
+    width:300px;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+.food-card:hover{
+    transform:scale(1.03);
+}
+
+.food-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.food-card h3{
+    padding:15px;
+    color:#8B0000;
+}
+
+.food-card p{
+    padding:0 15px 20px;
+}
+
+/* SERVICES */
+
+.services{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+}
+
+.service-box{
+    background:white;
+    width:300px;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+.service-box h3{
+    color:#8B0000;
+    margin-bottom:15px;
+}
+
+/* CONTACT */
+
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    margin:10px 0;
+    font-size:18px;
+}
+
+.social-links a{
+    text-decoration:none;
+    color:#8B0000;
+    margin:0 15px;
+    font-size:18px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+    <h1>The Roaring Pan Restaurant</h1>
+    <p>Delicious Meals Served With Passion</p>
+</header>
+
+<!-- NAVIGATION -->
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#menu">Menu</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- HERO SECTION -->
+
+<section class="hero" id="home">
+    <h2>Welcome To The Roaring Pan Restaurant</h2>
+</section>
+
+<!-- ABOUT SECTION -->
+
+<section class="about" id="about">
+
+    <h2>About Us</h2>
+
+    <p>
+        The Roaring Pan Restaurant is one of the finest dining destinations in Maseru, Lesotho. We are passionate about preparing fresh and delicious meals using high-quality ingredients and professional cooking techniques.
+    </p>
+
+    <p>
+        Our restaurant offers a relaxing atmosphere for families, tourists, couples, and business professionals. From grilled dishes to desserts and refreshing beverages, we guarantee unforgettable dining experiences and excellent customer service.
+    </p>
+
+</section>
+
+<!-- FOOD MENU -->
+
+<section id="menu">
+
+    <h2>Food We Offer</h2>
+
+    <div class="food-gallery">
+
+        <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd" alt="Burger">
+            <h3>Classic Beef Burger</h3>
+            <p>
+                Juicy grilled beef burger served with crispy fries and fresh vegetables.
+            </p>
+        </div>
+
+        <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947" alt="Steak">
+            <h3>Grilled Steak</h3>
+            <p>
+                Tender steak prepared with our signature spices and served hot.
+            </p>
+        </div>
+
+        <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19" alt="Pizza">
+            <h3>Creamy Pasta</h3>
+            <p>
+                
+               Delicious creamy pasta prepared with fresh herbs and rich flavors.
+            </p>
+        </div>
+
+        <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38" alt="Pasta">
+            <h3>Cheese Pizza</h3>
+            <p>
+                Freshly baked pizza topped with mozzarella cheese and vegetables.
+            </p>
+        </div>
+
+        <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288" alt="Seafood">
+            <h3>Seafood Platter</h3>
+            <p>
+                A variety of seafood dishes served with lemon sauce and vegetables.
+            </p>
+        </div>
+
+        <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b" alt="Dessert">
+            <h3>Chocolate Dessert</h3>
+            <p>
+                Sweet chocolate dessert served with cream and fresh strawberries.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SERVICES -->
+
+<section id="services">
+
+    <h2>Our Services</h2>
+
+    <div class="services">
+
+        <div class="service-box">
+            <h3>Dine-In Experience</h3>
+            <p>
+                Enjoy luxury dining with excellent customer service and a relaxing atmosphere.
+            </p>
+        </div>
+
+        <div class="service-box">
+            <h3>Online Food Ordering</h3>
+            <p>
+                Convenient online ordering system for pickup and delivery services.
+            </p>
+        </div>
+
+        <div class="service-box">
+            <h3>Event Catering</h3>
+            <p>
+                Professional catering for weddings, birthdays, conferences, and celebrations.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+    <h2>Contact Us</h2>
+
+    <p>Email: info@roaringpan.com</p>
+    <p>Phone: +266 63610196</p>
+    <p>Location: Maseru, Lesotho</p>
+
+    <br>
+
+    <div class="social-links">
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+        <a href="https://twitter.com" target="_blank">X/Twitter</a>
+       
+    </div>
+
+    <br>
+
+    <p>
+        Visit our partner website:
+        <a href="https://www.tripadvisor.com" target="_blank">
+            Tripadvisor
+        </a>
+    </p>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+    <p>© 2026 The Roaring Pan Restaurant | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
